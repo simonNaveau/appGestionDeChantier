@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      RAPPORT
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only solid>
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+      
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+      <ion-grid class="button-group">
+          <ion-row>
+            <ion-col>
+              <button ion-button id="rapport-button1"   block color="calm"><ion-icon style="font-size: 30px" name="cloud"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+              <button ion-button id="rapport-button2" on-click="goToRAPPORT4()"  block color="positive"><ion-icon style="font-size: 30px" name="stats"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+                <button ion-button id="rapport-button3" on-click="goToRAPPORT5()"  block color="positive"><ion-icon style="font-size: 30px" name="medkit"></ion-icon></button>
+              </ion-col>
+              <ion-col>
+                  <button ion-button id="rapport-button4" on-click="goToRAPPORT2()"  block color="positive"><ion-icon style="font-size: 30px" name="folder-open"></ion-icon></button>
+                </ion-col>
+            <ion-col>
+              <button ion-button id="rapport-button5" on-click="goToRAPPORT3()"  block color="positive"><ion-icon style="font-size: 30px" name="attach"></ion-icon></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page25" style="background-color:#F1F1F1;">
+  <div id="rAPPORT-container15" class="padding">
+    <img src="assets/img/w09LgUdmQHegvZPDyMzW_meteo.jpg" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
+  </div>
+  <form id="rAPPORT-form18">
+    <ion-item id="rAPPORT-input42">
+      <ion-label>
+        Date :
+      </ion-label>
+      <ion-input type="date" placeholder="" name="datein"></ion-input>
+    </ion-item>
+    <ion-item id="rAPPORT-input43">
+      <ion-label>
+        Adresse :
+      </ion-label>
+      <ion-input type="text" placeholder="&quot;6800 boulevard ...&quot;" name="adressein"></ion-input>
+    </ion-item>
+    <ion-item id="rAPPORT-textarea1" class="inTexte">
+      <ion-label>
+        Commentaire :
+      </ion-label>
+      <ion-textarea placeholder="&quot;Commentaire sur la journee&quot;"></ion-textarea>
+    </ion-item>
+  </form>
+</ion-content>

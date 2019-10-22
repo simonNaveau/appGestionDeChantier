@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      EQUIPEMENT
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page7" style="background-color:#F1F1F1;">
+  <div id="eQUIPEMENT-container11">
+    <h2 id="eQUIPEMENT-heading2" style="color:#727272;font-weight:600;text-align:center;" class="padding bandeau">
+      {{lEquipement.identification | uppercase}}
+    </h2>
+  </div>
+  <ion-list id="eQUIPEMENT-list17">
+    <ion-item color="none" id="eQUIPEMENT-list-item55" class="item-borderless, listBackground" style="border-bottom:0; border-top:0"> 
+      Type : {{lEquipement.type}}
+    </ion-item>
+    <ion-item color="none" id="eQUIPEMENT-list-item56" class="item-borderless, listBackground" style="border-bottom: 0">
+      Marque : {{lEquipement.marque}}
+    </ion-item>
+  </ion-list>
+  <div class="spacer" style="height:2%;" id="eQUIPEMENT-spacer17"></div>
+  <ion-list id="eQUIPEMENT-list18">
+    <ion-item color="none" id="eQUIPEMENT-list-item57" class="item-borderless underline , listBackground" style="border-bottom: 0">
+      Ilustration de l'equipement :
+    </ion-item>
+  </ion-list>
+  <div *ngIf="lEquipement.haveLogo;then content else other_content">here is ignored</div>
+    <ng-template #content><img [src]="lEquipement.profile_picture" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" /></ng-template>
+    <ng-template #other_content style="padding:auto">"Il n'y a pas d'illustration enregistree pour cet equipement"</ng-template>
+</ion-content>

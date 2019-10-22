@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      EMPLOYE
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page18" style="background-color:#F1F1F1;">
+  <h3 id="eMPLOYE5-heading8" style="color:#000000;text-align:center;padding" class="bandeauCreation">Creation d'un employe</h3>
+  
+  <form id="eMPLOYE5-form8">
+    <ion-item id="eMPLOYE5-input21">
+      <ion-label>
+        Nom :
+      </ion-label>
+      <ion-input type="text" placeholder="Nouveau nom" [(ngModel)]="newnom" name="nomin">test</ion-input>
+    </ion-item>
+    <ion-item id="eMPLOYE5-input22" class="bottomborder">
+      <ion-label>
+        Prenom 
+      </ion-label>
+      <ion-input type="text" placeholder="Nouveau prenom" [(ngModel)]="newprenom" name="prenomin"></ion-input>
+    </ion-item>
+    <ion-item id="eMPLOYE5-input23">
+      <ion-label>
+        Courriel :
+      </ion-label>
+      <ion-input type="email" placeholder="Nouveau courriel" [(ngModel)]="newcourriel" name="courrielin"></ion-input>
+    </ion-item>
+    <ion-item id="eMPLOYE5-input24">
+      <ion-label>
+        Cellulaire :
+      </ion-label>
+      <ion-input type="tel" placeholder="Nouveau cellulaire" [(ngModel)]="newcellulaire" name="cellulairein"></ion-input>
+    </ion-item>
+
+    <ion-item id="eMPLOYE5-select1">
+      <ion-label>
+        Fonction :
+      </ion-label>
+      <ion-select>
+        <ion-option *ngFor="let fonction of mesFonctions"  (ionSelect)="detectAutre(fonction.id)">
+          {{fonction.value}}
+        </ion-option>
+        <ion-option (ionSelect)="setSelect()">
+            Autre
+          </ion-option>
+      </ion-select>
+    </ion-item>
+    <div *ngIf="selected;then content else other_content">here is ignored</div>
+    <ng-template #content>
+      <ion-item>
+        <ion-label>
+          Autre ? :
+        </ion-label>
+        <ion-input type="text" placeholder="Fonction a ajouter" [(ngModel)]="newFonctionValue" name="fonctionValue"></ion-input>
+      </ion-item>
+    </ng-template>
+    <ng-template #other_content></ng-template>
+
+    <h4 id="eMPLOYE5-heading9" style="color:#3D2D2D; padding-left: 3%;" class="underline padding">Photo de profil :</h4>
+    <button id="eMPLOYE5-button22" ion-button color="dark" small style="font-weight:500;" class="leftMargin">
+      Choisir un fichier ...
+    </button>
+
+    <div class="spacer" style="height:29px;" id="eMPLOYE5-spacer23"></div>
+    <button id="eMPLOYE5-button24" ion-button color="positive" block style="border-radius:1024px 1024px 1024px 1024px; padding-left: 3%; padding-right: 3%" class="" on-click="createEmploye(newnom, newprenom, newcourriel, newcellulaire, newid_fonction, newprofile_picture, idEntreprise)">
+      VALIDER
+    </button>
+  </form>
+</ion-content>

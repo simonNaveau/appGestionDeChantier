@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      EMPLOYE
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-grid class="button-group">
+        <ion-row>
+          <ion-col>
+            <button id="employe4-button1" ion-button block color="calm">Feuille de temps</button>
+          </ion-col>
+          <ion-col>
+            <button id="employe4-button2" ion-button block (click)="goToEMPLOYE2(idEntreprise, idSur)" color="positive">Employe</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page14" style="background-color:#F1F1F1;">
+  <ion-list id="eMPLOYE4-list14">
+    <ion-item color="none" id="eMPLOYE4-list-item97" class="bandeau">
+      <ion-icon name="search" item-left></ion-icon>
+      Recherche
+    </ion-item>
+    <ion-item-divider color="light" id="eMPLOYE4-list-item-divider1" class="underline item-borderless">
+      Selectionnner une periode :
+    </ion-item-divider>
+    <form id="eMPLOYE4-form5">
+      <ion-item id="eMPLOYE4-input14">
+        <ion-label>
+          De :
+        </ion-label>
+        <ion-input type="date" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="eMPLOYE4-input15" class="bottomborder">
+        <ion-label>
+          A :
+        </ion-label>
+        <ion-input type="date" placeholder=""></ion-input>
+      </ion-item>
+    </form>
+  </ion-list>
+  <div id="eMPLOYE4-markdown7" class="show-list-numbers-and-dots">
+    <p style="color:#000000;font-size:8px;">
+      &lt;p class=&quot;underline padding&quot;&gt;Selectionner le(s) projet(s):&lt;/p&gt;
+    </p>
+    <p style="color:#000000;font-size:8px;">
+      &lt;div class=&quot;row bottomborder&quot;&gt; &lt;div class=&quot;col col&quot;&gt;&lt;p&gt; Bleu: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;blue&quot; /&gt;&lt;br /&gt; Jaune: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot;
+      value=&quot;yellow&quot; /&gt;&lt;br /&gt; Rouge: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;red&quot; /&gt;&lt;br /&gt; Vert: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;green&quot; /&gt;
+      &lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;col&quot;&gt;&lt;p&gt; Bleu: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;blue&quot; /&gt;&lt;br /&gt; Jaune: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;yellow&quot;
+      /&gt;&lt;br /&gt; Rouge: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;red&quot; /&gt;&lt;br /&gt; Vert: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;green&quot; /&gt; &lt;/p&gt;&lt;/div&gt; &lt;/div&gt;
+    </p>
+  </div>
+  <div id="eMPLOYE4-markdown8" class="show-list-numbers-and-dots">
+    <p style="color:#000000;font-size:8px;">
+      &lt;p class=&quot;underline padding&quot;&gt;Selectionner le(s) specialite(s):&lt;/p&gt;
+    </p>
+    <p style="color:#000000;font-size:8px;">
+      &lt;div class=&quot;row bottomborder&quot;&gt; &lt;div class=&quot;col col&quot;&gt;&lt;p&gt; Bleu: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;blue&quot; /&gt;&lt;br /&gt; Jaune: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot;
+      value=&quot;yellow&quot; /&gt;&lt;br /&gt; Rouge: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;red&quot; /&gt;&lt;br /&gt; Vert: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;green&quot; /&gt;
+      &lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;col&quot;&gt;&lt;p&gt; Bleu: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;blue&quot; /&gt;&lt;br /&gt; Jaune: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;yellow&quot;
+      /&gt;&lt;br /&gt; Rouge: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;red&quot; /&gt;&lt;br /&gt; Vert: &lt;input type=&quot;checkbox&quot; name=&quot;colors&quot; value=&quot;green&quot; /&gt; &lt;/p&gt;&lt;/div&gt; &lt;/div&gt;
+    </p>
+  </div>
+  <button id="eMPLOYE4-button17" ion-button color="positive" block style="border-radius:1000px 1000px 1000px 1000px;" class="rlMargin" on-click="goToEMPLOYE3(idSur, idEntreprise)">
+    RECHERCHER
+  </button>
+</ion-content>

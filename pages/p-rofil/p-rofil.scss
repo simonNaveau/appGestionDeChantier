@@ -1,0 +1,16 @@
+page-p-rofil {
+    .editButton{
+      font-size: 1.4em;
+      line-height: .67;
+      pointer-events: none;
+      padding-left: 11em;
+    }
+
+    .listNoBorder {
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        background: $royal;
+    }
+}

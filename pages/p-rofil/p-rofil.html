@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      PROFIL
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page8" style="background-color:#F1F1F1;">
+  <button id="pROFIL-button5" ion-button large clear color="dark" block style="border-radius:150px 150px 150px 150px;" on-click="goToPROFIL2(mesInfos)">
+    <ion-icon class="editButton" name="create"></ion-icon>
+  </button>
+  <img src="assets/img/kjCqzdfBRUyHT4964AQa_casque.png" style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" />
+  <div id="pROFIL-markdown3" style="text-align:center;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;font-size:20px;">
+      <strong>
+        {{mesInfos.prenom | uppercase}}
+      </strong>
+    </p>
+  </div>
+  <div id="pROFIL-markdown4" style="text-align:center;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">
+      <strong>
+        {{mesInfos.nom | uppercase}}
+      </strong>
+    </p>
+  </div>
+  <div class="spacer" style="height:13px;" id="pROFIL-spacer19"></div>
+  <h4 id="pROFIL-heading4" style="color:#000000;" class="underline">
+    Informations complementaires :
+  </h4>
+  <ion-list id="pROFIL-list21" class="item-borderless; listNoBorder">
+    <ion-item color="none" id="pROFIL-list-item64" class="item-borderless; listNoBorder">
+      Titre: {{mesInfos.titre}}
+    </ion-item>
+    <ion-item color="none" id="pROFIL-list-item67" class="item-borderless; listNoBorder">
+      Cellulaire: {{mesInfos.cellulaire}}
+    </ion-item>
+    <ion-item color="none" id="pROFIL-list-item68" class="item-borderless; listNoBorder">
+      Courriel: {{mesInfos.courriel}}
+    </ion-item>
+  </ion-list>
+</ion-content>

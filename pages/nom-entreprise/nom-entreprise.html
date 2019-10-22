@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      {{name | uppercase}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page11" style="background-color:#F1F1F1;">
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+            <button id="nomEntreprise-button8" ion-button class="squareButton" color="positive" block on-click="goToPROJETS(idEntreprise, idSur)">
+                PROJET
+              </button>
+        </ion-col>
+        <ion-col>
+            <button id="nomEntreprise-button9" ion-button class="squareButton" color="positive" block>
+                DEFICIENCES
+              </button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <button id="nomEntreprise-button10" ion-button class="squareButton" color="positive" block on-click="goToEMPLOYE4(idEntreprise, idSur)">
+                EMPLOYE
+              </button>
+        </ion-col>
+        <ion-col>
+            <button id="nomEntreprise-button11" ion-button class="squareButton" color="positive" block on-click="goToEQUIPEMENT4(idEntreprise, idSur)">
+                EQUIPEMENT
+              </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

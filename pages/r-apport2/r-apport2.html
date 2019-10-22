@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      RAPPORT
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only solid>
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+      <ion-grid class="button-group">
+          <ion-row>
+            <ion-col>
+              <button id="rapport2-button1" on-click="goToRAPPORT()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="cloud"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+              <button id="rapport2-button2" ion-button block on-click="goToRAPPORT4()" color="positive"><ion-icon style="font-size: 30px" name="stats"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+                <button id="rapport2-button3" on-click="goToRAPPORT5()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="medkit"></ion-icon></button>
+              </ion-col>
+              <ion-col>
+                  <button id="rapport2-button4" ion-button block color="calm"><ion-icon style="font-size: 30px" name="folder-open"></ion-icon></button>
+                </ion-col>
+            <ion-col>
+              <button id="rapport2-button5" on-click="goToRAPPORT3()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="attach"></ion-icon></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page29" style="background-color:#F1F1F1;">
+  <ion-list id="rAPPORT2-list13">
+    <ion-item color="none" id="rAPPORT2-list-item103">
+      <ion-icon name="options" item-left></ion-icon>
+      Donnee Employe
+      <ion-note item-right></ion-note>
+      <ion-icon name="arrow-forward" item-right></ion-icon>
+    </ion-item>
+    <ion-item color="none" id="rAPPORT2-list-item115">
+      <ion-icon name="options" item-left></ion-icon>
+      Donnee Employe
+      <ion-note item-right></ion-note>
+      <ion-icon name="arrow-forward" item-right></ion-icon>
+    </ion-item>
+    <ion-item color="none" id="rAPPORT2-list-item114">
+      <ion-icon name="options" item-left></ion-icon>
+      Donnee Equipement
+      <ion-note item-right></ion-note>
+      <ion-icon name="arrow-forward" item-right></ion-icon>
+    </ion-item>
+    <ion-item color="none" id="rAPPORT2-list-item113">
+      <ion-icon name="options" item-left></ion-icon>
+      Donnee Sous-traitant
+      <ion-note item-right></ion-note>
+      <ion-icon name="arrow-forward" item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+  <div class="spacer" style="height:61px;" id="rAPPORT2-spacer32"></div>
+  <ion-fab bottom right >
+    <button ion-fab style="width:90px; height:90px;" color="positive"><ion-icon font-color="white" class="fat" name="add" ></ion-icon></button>
+    <ion-fab-list side="left" style="margin-right:100px; margin-top:12px;">
+      <button ion-fab color="positive" class="fat" style="font-size:11px;" (click)="goToDONNEEFACTUELLE()">EMPLOYE</button>
+      <button ion-fab color="positive" class="fat" style="font-size:11px;" (click)="goToDONNEEFACTUELLE2()">EQUIPEMENT</button>
+      <button ion-fab color="positive" class="fat" style="font-size:11px;" (click)="goToDONNEEFACTUELLE3()">SOUS-TRAITANT</button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

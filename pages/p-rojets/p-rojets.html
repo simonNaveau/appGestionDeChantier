@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      PROJETS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page4" style="background-color:#F1F1F1;">
+  <ion-list  id="pROJETS-list4">
+    <ion-item *ngFor="let projet of mesProjets" color="none" on-click="goToMESRAPPORTS(projet.id)" id="pROJETS-list-item21">
+      <ion-thumbnail item-left>
+        <img src="assets/img/tmE7ydRBS523cZZT4M0K_casque.png" />
+      </ion-thumbnail>
+      {{projet.nom}}
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      AJOUT FEUILLE DE TEMPS
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-grid class="button-group">
+        <ion-row>
+          <ion-col>
+            <button id="ajoutefdt2-button1" ion-button block color="calm" ><ion-icon name="information-circle"></ion-icon></button>
+          </ion-col>
+          <ion-col>
+            <button id="ajoutfdt2-button2" ion-button block (click)="goToAJOUTFEUILLEDETEMPS()" color="positive"><ion-icon name="clock"></ion-icon></button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page24" style="background-color:#F1F1F1;">
+  <form id="aJOUTFEUILLEDETEMPS2-form14">
+    <ion-item id="aJOUTFEUILLEDETEMPS2-select4" class="bottomborder">
+      <ion-label>
+        Projet :
+      </ion-label>
+      <ion-select name="projetin">
+        <ion-option>
+          Projet 1
+        </ion-option>
+        <ion-option>
+          Projet 2
+        </ion-option>
+        <ion-option>
+          Projet 3
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <form id="aJOUTFEUILLEDETEMPS2-form15">
+    <ion-item id="aJOUTFEUILLEDETEMPS2-input33" class="topborder">
+      <ion-label>
+        Nombre de kilometres :
+      </ion-label>
+      <ion-input type="number" placeholder="&quot;50 kms&quot;" name="kilometragein"></ion-input>
+    </ion-item>
+  </form>
+  <button id="aJOUTFEUILLEDETEMPS2-button13" ion-button color="positive" block small style="border-radius:1024px 1024px 1024px 1024px;" class="rlMargin" on-click="goToAJOUTFEUILLEDETEMPS()">
+    VALIDER
+  </button>
+</ion-content>

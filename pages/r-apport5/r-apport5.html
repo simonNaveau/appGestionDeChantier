@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      RAPPORT
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only solid>
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+      <ion-grid class="button-group">
+          <ion-row>
+            <ion-col>
+              <button id="rapport5-button1" on-click="goToRAPPORT()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="cloud"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+              <button id="rapport5-button2" on-click="goToRAPPORT4()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="stats"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+                <button ion-button block color="calm"><ion-icon style="font-size: 30px" name="medkit"></ion-icon></button>
+              </ion-col>
+              <ion-col>
+                  <button id="rapport5-button3" on-click="goToRAPPORT2()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="folder-open"></ion-icon></button>
+                </ion-col>
+            <ion-col>
+              <button id="rapport5-button4" on-click="goToRAPPORT3()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="attach"></ion-icon></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page26" style="background-color:#F1F1F1;">
+  <form id="rAPPORT5-form20">
+    <ion-item id="rAPPORT5-toggle4" class="toggleSoin gras">
+      <ion-label>
+        Programme de prévention
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick1()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked1" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    <ion-item id="rAPPORT5-toggle5" class="toggleSoin gras">
+      <ion-label>
+        Accueil de nouveaux travailleurs
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick2()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked2" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    <ion-item id="rAPPORT5-toggle6" class="toggleSoin gras">
+      <ion-label>
+        Réunion de sécurité
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick3()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked3" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    <ion-item id="rAPPORT5-toggle7" class="toggleSoin gras">
+      <ion-label>
+        Interventions auprès de contremaîtres et travailleurs
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick4()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked4" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+
+    <ion-item id="rAPPORT5-toggle8" class="toggleSoin gras">
+      <ion-label>
+        Verification d'equipements de securite
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick5()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked5" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+
+    <ion-item id="rAPPORT5-toggle8" class="toggleSoin gras">
+      <ion-label>
+        Verification d'equipements de securite
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick6()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked6" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    
+    <ion-item id="rAPPORT5-toggle9" class="toggleSoin gras">
+      <ion-label>
+        Visite de contrôle et rappels
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick7()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked7" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    <ion-item id="rAPPORT5-toggle10" class="toggleSoin gras">
+      <ion-label>
+        Avis verbal
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick8()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked8" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    <ion-item id="rAPPORT5-toggle11" class="toggleSoin gras">
+      <ion-label>
+        Avis écrit
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick9()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked9" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    <ion-item id="rAPPORT5-toggle12" class="toggleSoin gras">
+      <ion-label>
+        Autres éléments reliés à la santé et sécurité
+      </ion-label>
+      <ion-toggle color="positive" (ionChange)="onButtonClick10()" checked="false"></ion-toggle>
+    </ion-item>
+    <textarea *ngIf="buttonClicked10" class="textareaSmall padding" name="pPrevention" id="pPrevention" placeholder="Complement d'information" cols=41 style="width:100%"></textarea>
+    <div class="spacer" style="width:320px; height:32px;" id="rAPPORT5-spacer26"></div>
+    <button id="rAPPORT5-button16" ion-button color="positive">
+      <ion-icon name="camera"></ion-icon>
+    </button>
+    <button id="rAPPORT5-button21" ion-button color="positive" class="gras">
+      Parcourir ...
+    </button>
+  </form>
+</ion-content>

@@ -1,0 +1,238 @@
+// http://ionicframework.com/docs/v2/theming/
+.button {
+	box-shadow:none;
+  }
+
+.button-group {
+    .col {
+      &:first-child:not(:last-child) {
+        padding-right: 0;
+        padding-left: 0;
+        .button {
+          border-radius: 0;
+          padding-right: 0;
+          padding-left: 0;
+          box-shadow:none;
+        }
+      }
+      &:not(:first-child):not(:last-child) {
+        
+        padding-right: 0;
+        padding-left: 0;
+        .button {
+          border-radius: 0;
+          padding-right: 0;
+          padding-left: 0px;
+          box-shadow:none;
+        }
+      }
+      &:last-child:not(:first-child) {
+        padding-left: 0;
+        padding-right: 0;
+        .button {
+          border-radius: 0;
+          padding-right: 0;
+          padding-left: 0px;
+          box-shadow:none;
+        }
+      }
+    }
+  }
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.title.title-md {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.listBackground {
+	background: $royal;
+}
+
+.leftMargin {
+	margin-left: 15px;
+}
+
+.rightMargin {
+	margin-right: 15px;
+}
+
+.rlMargin {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.greybottomborder {
+	border-bottom: solid 2px #575757;
+}
+
+.factView {
+	border: solid 3px #B0CEDE;
+	margin-right: 6px;
+	margin-left: 6px;
+	border-radius: 8px;
+}
+
+.noTopMarge {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.lowTopMarge {
+	padding-top: 0;
+	margin-top: 5px;
+}
+
+.noBottomMarge {
+	padding-bottom: 3px;
+	margin-bottom: 0;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.backred {
+	background: #E2BEBD;
+}
+
+.backgreen {
+	background: #82AB7F;
+}
+
+.backorange {
+	background: #DFD5BA;
+}
+
+.backblue {
+	background: #B0CEDE;
+}
+
+.borderred {
+	border: 2px solid #A94442;
+	border-radius: 4px;
+}
+
+.bordernotif {
+	border: 2px solid
+}
+
+.borderorange {
+	border: 2px solid #8A6D3B;
+	border-radius: 4pxrgb(99, 98, 96)
+}
+
+.borderblue {
+	border: 2px solid #31708F;
+	border-radius: 4px;
+}
+
+.gras {
+	font-weight: bold;
+}
+
+.bandeau {
+	height: 7%;
+	border-bottom: 2px solid black;
+}
+
+.bandeauCreation {
+	height: 8%;
+	padding-bottom: 5px;
+	padding-top: 3px;
+	border-bottom: 2px solid black;
+	margin: 0;
+}
+
+.description {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-right: 9px;
+	margin-left: 9px;
+	border: 1px solid $positive;
+	border-radius: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.bottomborder {
+	border-bottom: solid 3px #575757;
+}
+
+.topborder {
+	border-top: solid 3px black;
+}
+
+.inTexte {
+	height: 50px;
+}
+
+.ongletSelect {
+	border: solid 4px $calm;
+	background: $positive;
+}
+
+.ongletUnselect {
+	border: solid 4px white;
+	background: $calm;
+}
+
+.textareaBig {
+	height: 10em;
+}
+
+.textareaSmall {
+	height: 5em;
+}
+
+.paddingleft5 {
+	padding-left: 5px;
+}
+
+.paddingleft15 {
+	padding-left: 13px;
+}
+
+.paddingleft10 {
+	padding-left: 10px;
+}
+
+.paddingTop0 {
+	padding-top: 0;
+}
+
+.toggleSoin {
+	font-size: 13px;
+	padding-left: 2px;
+}
+
+.navMenu {
+	position: fixed;
+	top: 0%;
+    width: 100%
+}
+
+.divDefault {
+	position: fixed;
+	top: 15%;
+    width: 100%
+}
+.noBottomBorder{
+	border-bottom: 0;
+}

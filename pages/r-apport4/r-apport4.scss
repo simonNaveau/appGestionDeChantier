@@ -1,0 +1,86 @@
+page-r-apport4 {
+  // SCSS pour la gestion de la barre de navigation sous le header /////////////////////////////////////////////////
+
+  ion-toolbar{
+    height:41px;
+    padding:0px;
+    margin:0px;
+  }
+  .rapportNavBar{
+    padding:0;
+    margin:0;
+  }
+  
+  .button-group {
+    .col {
+      &:first-child:not(:last-child) {
+        padding-right: 0;
+        padding-left: 0;
+        .button {
+          border-radius: 0;
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      &:not(:first-child):not(:last-child) {
+        
+        padding-right: 0;
+        padding-left: 0;
+        .button {
+          border-radius: 0;
+          padding-right: 0;
+          padding-left: 0px;
+        }
+      }
+      &:last-child:not(:first-child) {
+        padding-left: 0;
+        padding-right: 0;
+        .button {
+          border-radius: 0;
+          padding-right: 0;
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+  
+  .col {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    min-height: 1px;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  
+  .toolbar-ios {
+     margin: 0;
+     padding: 0; 
+     padding-left: 0; 
+     padding-right: 0; 
+     min-height: 44px;
+  }
+  
+  .grid {
+    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  ////////////////////////////////////////////////////////////
+}

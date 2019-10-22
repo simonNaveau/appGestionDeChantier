@@ -1,0 +1,40 @@
+page-nom-entreprise {
+
+    .squareButton{
+        height: 20vh;
+        width: 20vh;
+        border-radius:15px 15px 15px 15px;
+        margin: auto;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    ion-grid {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 15vh;
+        padding-right: 15vh;    
+        text-align: center;
+      }
+
+      
+
+      .grid {
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+}

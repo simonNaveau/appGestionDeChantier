@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      EQUIPEMENT
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-grid class="button-group">
+        <ion-row>
+          <ion-col>
+            <button id="equipement2-button1" ion-button block (click)="goToEQUIPEMENT4()" color="positive">Feuille d'equipement</button>
+          </ion-col>
+          <ion-col>
+            <button id="equipement2-button2" ion-button block color="calm">Equipement</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page16" style="background-color:#F1F1F1;">
+
+  <ion-list id="eQUIPEMENT2-list20">
+      <ion-item *ngFor="let equipement of myActiveEquipements" (click)="presentActionSheet(equipement)" id="eMPLOYE2-list-item75" class="gras">
+          <ion-thumbnail item-left>
+              <div *ngIf="equipement.haveLogo;then content else other_content">here is ignored</div>
+    
+              <ng-template #content><img  [src]="equipement.profile_picture"></ng-template>
+              <ng-template #other_content><img src="assets/img/equipement_default.png" /></ng-template>
+              
+            
+          </ion-thumbnail>
+          <h2>
+            {{equipement.identification | uppercase}} / {{equipement.marque}}
+          </h2>
+        </ion-item>
+  </ion-list>
+
+  <div class="spacer" style="height:10px;" id="eQUIPEMENT2-spacer16"></div>
+  <ion-fab bottom right>
+    <button ion-fab style="width:90px; height:90px;" (click)="goToAddEquipement(idEntreprise)" color="positive"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>

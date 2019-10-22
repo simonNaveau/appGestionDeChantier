@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      MES ENTREPRISES
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page2" style="background-color:#F1F1F1;">
+  <ion-list  id="mESENTREPRISES-list2">
+    <ion-item *ngFor="let entreprise of mesEntreprises" color="none" on-click="goToNomEntreprise(entreprise.nomEntreprise, entreprise.entreprises_id, entreprise.id)" id="mESENTREPRISES-list-item11">
+      <ion-thumbnail item-left><img class="company_logo" [src]="entreprise.logoLink"/></ion-thumbnail>
+      {{entreprise.nomEntreprise}}
+    </ion-item>
+  </ion-list>
+</ion-content>

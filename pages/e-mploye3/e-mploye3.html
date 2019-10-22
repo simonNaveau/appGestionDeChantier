@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      EMPLOYE
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-grid class="button-group">
+        <ion-row>
+          <ion-col>
+            <button id="employe3-button1" ion-button block color="calm">Feuille de temps</button>
+          </ion-col>
+          <ion-col>
+            <button id="employe3-button2" ion-button block (click)="goToEMPLOYE2(idSur, idEnt)" color="positive">Employe</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page13" style="background-color:#F1F1F1;">
+    <ion-list id="eMPLOYE2-list11">  
+        <ion-item *ngFor="let fdt of mesFeuilles" (click)="presentActionSheet(fdt)" id="eMPLOYE3-list-item81">
+          <ion-note item-right>{{fdt.date}}</ion-note>
+            {{fdt.lEmploye.nom}}, {{fdt.lEmploye.prenom}}
+            <ion-icon name="arrow-forward" item-right></ion-icon>
+          </ion-item>
+    </ion-list>
+  <div class="spacer" style="height:10px;" id="eMPLOYE3-spacer11"></div>
+  <ion-fab bottom right>
+<button ion-fab style="width:90px; height:90px;" (click)="goToAJOUTFEUILLEDETEMPS(idSur, idEnt)" color="positive"><ion-icon name="add"></ion-icon></button>
+</ion-fab>
+</ion-content>

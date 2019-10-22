@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      EQUIPEMENT
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-grid class="button-group">
+      <ion-row>
+        <ion-col>
+          <button id="equipement4-button1" ion-button block color="calm">Feuille d'equipement</button>
+        </ion-col>
+        <ion-col>
+          <button id="equipement4-button2" ion-button block (click)="goToEQUIPEMENT2(idEntreprise, idSur)" color="positive">Equipement</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content id="page15" style="background-color:#F1F1F1;">
+  <ion-list id="eQUIPEMENT4-list19">
+    <ion-item color="none" id="eQUIPEMENT4-list-item100" class="bandeau">
+      <ion-icon name="search" item-left></ion-icon>
+      Recherche
+    </ion-item>
+
+    <form id="eQUIPEMENT4-form6">
+      <ion-item-divider color="light" id="eQUIPEMENT4-list-item-divider2" class="underline item-borderless">
+        Selectionnner par periode :
+      </ion-item-divider>
+      <ion-item id="eQUIPEMENT4-input16">
+        <ion-label>
+          De :
+        </ion-label>
+        <ion-input type="date" [(ngModel)]="dateDebut" name="de"></ion-input>
+      </ion-item>
+      <ion-item id="eQUIPEMENT4-input17" class="bottomborder">
+        <ion-label>
+          A :
+        </ion-label>
+        <ion-input type="date" [(ngModel)]="dateFin" name="a"></ion-input>
+      </ion-item>
+      <ion-item-divider color="light" id="eQUIPEMENT4-list-item-divider3" class="underline item-borderless">
+        Selectionnner par projet :
+      </ion-item-divider>
+      <ion-searchbar showCancelButton="true" placeholder="Selectionnez projet(s)" (ionInput)="filterItems($event)" (ionCancel)="reset()"></ion-searchbar>
+      <ion-scroll style="height: 150px">
+          <ion-list style="padding-left: 2%; padding-right: 2%; padding-bottom: 1%;margin-bottom: 0;">
+            <ion-item  *ngFor="let item of mesProjets" (click)="setSelected(item.id)" [style.color]="getFontColor(item)">
+              {{ item.nom }}
+            </ion-item>
+          </ion-list>
+      </ion-scroll>
+    </form>
+  </ion-list>
+
+
+  <div class="spacer" style="height:30px;" id="eQUIPEMENT4-spacer13"></div>
+  <button id="eQUIPEMENT4-button18" ion-button color="positive" block style="border-radius:1024px 1024px 1024px 1024px; padding-left: 3%; padding-right: 3%"
+    on-click="sortListe(mesProjets, dateDebut, dateFin)">
+    RECHERCHER
+  </button>
+</ion-content>

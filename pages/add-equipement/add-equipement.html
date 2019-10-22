@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      EQUIPEMENT
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page19" style="background-color:#F1F1F1;">
+  <h3 id="eQUIPEMENT5-heading10" style="color:#000000;text-align:center;" class="bandeauCreation">Ajout d'un Equipement</h3>
+  <form id="equip-form">
+    <ion-item id="eQUIPEMENT5-input26">
+      <ion-label>
+        Identifiant :
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="newidentification" name="identin" placeholder="Nouvel indentifiant" ></ion-input>
+    </ion-item>
+    <ion-item id="eQUIPEMENT5-input27">
+      <ion-label>
+        Type :
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="newtype" name="typein" placeholder="Nouveau type" ></ion-input>
+    </ion-item>
+    <ion-item id="eQUIPEMENT5-input28" class="bottomborder">
+      <ion-label>
+        Marque :
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="newmarque" name="marquein" placeholder="Nouvelle Marque" ></ion-input>
+    </ion-item>
+    <div class="spacer" style="height:24px;" id="eQUIPEMENT5-spacer25"></div>
+    <h4 id="eQUIPEMENT5-heading11" style="color:#3D2D2D;" class="underline padding"></h4>
+    <button id="eQUIPEMENT5-button25" ion-button color="dark" small style="font-weight:500;" class="leftMargin">
+      Choisir un fichier ...
+    </button>
+  </form>
+  <div class="spacer" style="height:74px;" id="eQUIPEMENT5-spacer24"></div>
+  <button id="eQUIPEMENT5-button26" ion-button color="positive" block style="border-radius:1024px 1024px 1024px 1024px; padding-left: 3%; padding-right: 3%" (click)="createEquipement(newidentification, newtype, newmarque, idEntreprise)">
+    VALIDER
+  </button>
+</ion-content>

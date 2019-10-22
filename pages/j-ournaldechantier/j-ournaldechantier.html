@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      JOURNAL DE CHANTIER
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="page1" style="background-color:#F1F1F1;">
+  <div class="spacer" style="height:50px;"></div>
+  <img src="assets/img/26JbKOrRKmrkNgZyg2Uy_casque.png" style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" />
+  
+  <form id="jOURNALDECHANTIER-form2">
+    <div class="spacer" style="height:50px;"></div>
+
+    <ion-item id="jOURNALDECHANTIER-input3">
+      <ion-label>
+        CELLULAIRE
+      </ion-label>
+      <ion-input type="tel" placeholder="999-999-9999" [(ngModel)]="cellulaire" name="inputCellulaire"></ion-input>
+    </ion-item>
+
+    <ion-item id="jOURNALDECHANTIER-input4">
+      <ion-label>
+        MOT DE PASSE
+      </ion-label>
+      <ion-input type="password" placeholder="***********" [(ngModel)]="password" name="inputPassport"></ion-input>
+    </ion-item>
+
+  </form>
+  <div class="spacer" style="height:40px;"></div>
+  
+  <button id="jOURNALDECHANTIER-button1" ion-button color="positive" block style="font-weight:600;border-radius:27px 27px 27px 27px;" (click)="postLogin(cellulaire, password)">
+    CONNECTION
+  </button>
+  <button id="jOURNALDECHANTIER-button2" ion-button clear color="positive" block href-inappbrowser="/forgetpwd">
+    Mot de passe oublie ?
+  </button>
+</ion-content>

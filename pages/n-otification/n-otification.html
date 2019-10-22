@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      NOTIFICATION
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5" style="background-color:#F1F1F1;">
+
+    <div *ngFor="let notification of notifListe">
+      <ion-list id="nOTIFICATION-list7">
+        <ion-item on-click="goToNOTIFICATION2(notification)" id="nOTIFICATION-list-item38" [style.background-color]="getBackgroundColor(notification.color)" [style.border-color]= "getBorderColor(notification.color)" class="gras bordernotif">
+          <h2 [style.color]= "getBorderColor(notification.color)">{{notification.titre | uppercase}}</h2>
+          <span [style.color]="getBorderColor(notification.color)">{{notification.date}}</span>
+          <ion-thumbnail item-left><img class="company_logo" [src]="notification.logoLink"/></ion-thumbnail>
+        </ion-item>
+      </ion-list>
+      <div class="spacer" style="height:7px;" id="nOTIFICATION-spacer6"></div>
+    </div>
+
+</ion-content>

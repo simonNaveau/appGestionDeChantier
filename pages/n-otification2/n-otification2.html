@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      NOTIFICATION
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page6" style="background-color:#F1F1F1;">
+  <div id="nOTIFICATION2-container9" class="bandeau" [style.background-color]="getBackgroundColor(notification.color)" [style.border-color]="getBorderColor(notification.color)">
+    <h2 id="nOTIFICATION2-heading1" style="color:#000000;font-weight:600;text-align:center;" class="padding; textBandeau">
+      {{notification.titre | uppercase}}
+    </h2>
+  </div>
+  <div class="spacer" style="height:5%;" id="nOTIFICATION2-spacer14"></div>
+  <ion-list id="nOTIFICATION2-list15">
+    <ion-item color="none" id="nOTIFICATION2-list-item51" class="item-borderless; listNoBorder">
+      Envoyee par : {{nom}}
+    </ion-item>
+    <ion-item color="none" id="nOTIFICATION2-list-item52" class="item-borderless; listNoBorder">
+      Le : {{notification.date}}
+    </ion-item>
+  </ion-list>
+  <div class="spacer" style="height:2%;" id="nOTIFICATION2-spacer15"></div>
+    <ion-item color="none" style="margin-bottom: 5px;" id="nOTIFICATION2-list-item54" class="item-borderless; listNoBorder">
+      Description :
+    </ion-item>
+  <div id="nOTIFICATION2-container10" class="magic padding-left padding-right">
+    <div id="nOTIFICATION2-markdown1" class="show-list-numbers-and-dots description">
+      {{notification.description}}
+    </div>
+  </div>
+</ion-content>

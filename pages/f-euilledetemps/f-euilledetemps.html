@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      FEUILLE DE TEMPS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page20" style="background-color:#F1F1F1;">
+  <div class="spacer" style="height:30px;" id="fEUILLEDETEMPS-spacer28"></div>
+  <ion-list id="fEUILLEDETEMPS-list26">
+    <ion-item color="none" id="fEUILLEDETEMPS-list-item130" class="item-borderless noBottomMarge">
+      Feuille du {{maFeuille.date}}
+    </ion-item>
+    <ion-item color="none" id="fEUILLEDETEMPS-list-item131" class="item-borderless noBottomMarge">
+      Concerné  : {{maFeuille.lEmploye.prenom}} {{maFeuille.lEmploye.nom}}
+    </ion-item>
+    <ion-item color="none" id="fEUILLEDETEMPS-list-item133" class="item-borderless">
+      Total des pauses : {{totalPause}} minutes
+    </ion-item>
+    <ion-item color="none" id="fEUILLEDETEMPS-list-item134" class="item-borderless">
+      Total des heures : {{totalTravail}}
+    </ion-item>
+    <ion-item color="none" id="fEUILLEDETEMPS-list-item135" class="item-borderless bottomborder">
+      Deplacement de {{maFeuille.km}} Kms
+    </ion-item>
+  </ion-list>
+  <h4 id="fEUILLEDETEMPS-heading14" style="color:#575757;text-align:center;" class="underline">
+    Heures travaillees
+  </h4>
+  <h1 id="fEUILLEDETEMPS-heading15" style="color:#575757;text-align:center;" class="noTopMarge">
+    {{totalTravaillee}}
+  </h1>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      MES RAPPORTS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page3" style="background-color:#F1F1F1;">
+
+  <ion-list  id="mESRAPPORTS-list3">
+    <ion-item *ngFor="let rapport of mesRapports" color="none" (click)="presentActionSheet()" id="mESRAPPORTS-list-item12">
+      <ion-thumbnail item-left>
+        <img src="assets/img/JrN41sTC6IyclbWpLkag__blank.png" />
+      </ion-thumbnail>
+      <h2>
+        Rapport du {{rapport.date}}
+      </h2>
+    </ion-item>
+  </ion-list>
+
+  <div class="spacer" style="height:30px;" id="mESRAPPORTS-spacer4"></div>
+  <ion-fab bottom right>
+    <button ion-fab style="width:90px; height:90px;" (click)="goToRAPPORT()" color="positive"><ion-icon class="fat" name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>

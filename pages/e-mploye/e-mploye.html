@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      EMPLOYE
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page9" style="background-color:#F1F1F1;">
+    <div *ngIf="lEmploye.haveLogo;then content else other_content">here is ignored</div>
+
+    <ng-template #content><img [src]="lEmploye.profile_picture" style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" /></ng-template>
+    <ng-template #other_content><img src="assets/img/employe_default.png" style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" /></ng-template>
+
+  
+  <div id="eMPLOYE-markdown5" style="text-align:center;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;font-size:20px;">
+      <strong>
+        {{lEmploye.nom}}
+      </strong>
+    </p>
+  </div>
+  <div id="eMPLOYE-markdown6" style="text-align:center;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">
+      <strong>
+          {{lEmploye.prenom}}
+      </strong>
+    </p>
+  </div>
+  <div class="spacer" style="height:13px;" id="eMPLOYE-spacer20"></div>
+  <h4 id="eMPLOYE-heading5" style="color:#000000;" class="underline">
+    Informations complementaires :
+  </h4>
+  <ion-list id="eMPLOYE-list22" class="item-borderless, listBackground">
+    <ion-item color="none" id="eMPLOYE-list-item69" class="item-borderless, listBackground" style="border-top: 0;">
+      Fonction : {{laFonction}}
+    </ion-item>
+    <ion-item color="none" id="eMPLOYE-list-item70" class="item-borderless, listBackground" style="border-top: 0;">
+      Cellulaire: {{lEmploye.cellulaire}}
+    </ion-item>
+    <ion-item color="none" id="eMPLOYE-list-item71" class="item-borderless, listBackground" style="border-top: 0;">
+      Courriel: {{lEmploye.courriel}}
+    </ion-item>
+  </ion-list>
+</ion-content>

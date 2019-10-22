@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      EMPLOYE
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-grid class="button-group">
+        <ion-row>
+          <ion-col>
+            <button ion-button id="employe2-button1" block (click)="goToEMPLOYE4()" color="positive">Feuille de temps</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="employe2-button2" block color="calm">Employe</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page12" style="background-color:#F1F1F1;">
+
+  <ion-list id="eMPLOYE2-list11">  
+    <ion-item *ngFor="let employe of myActiveEmployes" (click)="presentActionSheet(employe)" id="eMPLOYE2-list-item75" class="gras">
+      <ion-thumbnail item-left>
+          <div *ngIf="employe.haveLogo;then content else other_content">here is ignored</div>
+
+          <ng-template #content><img  [src]="employe.profile_picture"></ng-template>
+          <ng-template #other_content><img src="assets/img/employe_default.png" /></ng-template>
+      </ion-thumbnail>
+      <h2>
+        {{employe.nom}} {{employe.prenom}}
+      </h2>
+    </ion-item>
+  </ion-list>
+
+  <div class="spacer" style="height:10px;" id="eMPLOYE2-spacer10"></div>
+  <ion-fab bottom right>
+    <button ion-fab style="width:90px; height:90px;" (click)="goToAddEmployePage(idEntreprise)" color="positive"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>

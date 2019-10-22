@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      FEUILLE DEQUIPEMENT
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page22" style="background-color:#F1F1F1;">
+  <div class="spacer" style="height:40px;" id="fEUILLEDEQUIPEMENT-spacer30"></div>
+  <ion-list id="fEUILLEDEQUIPEMENT-list28">
+    <ion-item color="none" id="fEUILLEDEQUIPEMENT-list-item142" class="item-borderless">
+      Feuille du : {{maFeuille.date}}
+    </ion-item>
+    <ion-item color="none" id="fEUILLEDEQUIPEMENT-list-item142" class="item-borderless">
+        Concerne : {{lEquipement.identification}}
+      </ion-item>
+      <ion-item color="none" id="fEUILLEDEQUIPEMENT-list-item142" class="item-borderless">
+        Operateur : {{maFeuille.nom_operateur}}
+      </ion-item>
+    <ion-item color="none" id="fEUILLEDEQUIPEMENT-list-item143" class="item-borderless">
+      Projet : {{maFeuille.nom_projet}}
+    </ion-item>
+    <ion-item color="none" id="fEUILLEDEQUIPEMENT-list-item147" class="item-borderless bottomborder">
+      Utilise de {{maFeuille.heure_debut}} à {{maFeuille.heure_fin}}
+    </ion-item>
+  </ion-list>
+  <div class="spacer" style="height:40px;" id="fEUILLEDEQUIPEMENT-spacer12"></div>
+  <h4 id="fEUILLEDEQUIPEMENT-heading18" style="color:#575757;text-align:center;" class="underline">
+    Heures travaillees
+  </h4>
+  <h1 id="fEUILLEDEQUIPEMENT-heading19" style="color:#575757;text-align:center;" class="noTopMarge">
+      {{totalTravail}}
+  </h1>
+</ion-content>

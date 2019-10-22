@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button end menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      RAPPORT
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only solid>
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+      <ion-grid class="button-group">
+          <ion-row>
+            <ion-col>
+              <button id="rapport4-button1" on-click="goToRAPPORT()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="cloud"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+              <button ion-button block color="calm"><ion-icon style="font-size: 30px" name="stats"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+                <button id="rapport4-button2" on-click="goToRAPPORT5()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="medkit"></ion-icon></button>
+              </ion-col>
+              <ion-col>
+                  <button id="rapport4-button3" on-click="goToRAPPORT2()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="folder-open"></ion-icon></button>
+                </ion-col>
+            <ion-col>
+              <button id="rapport4-button4" on-click="goToRAPPORT3()" ion-button block color="positive"><ion-icon style="font-size: 30px" name="attach"></ion-icon></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+</ion-toolbar>
+</ion-header>
+<ion-content id="page27" style="background-color:#F1F1F1;">
+  <form id="rAPPORT4-form16">
+    <h5 id="rAPPORT4-heading20" style="color:#575757;" class="underline padding noBottomMarge">
+      Problèmes d'operation :
+    </h5>
+    <textarea style="width:100%;" class="textareaSmall padding" name="textarea1" id="textarea1" placeholder="Complement d'information" cols=41></textarea>
+    <h5 id="rAPPORT4-heading21" style="color:#575757;" class="underline padding noBottomMarge">
+      Problèmes avec sous-traitants :
+    </h5>
+    <textarea style="width:100%;" class="textareaSmall padding" name="textarea2" id="textarea2" placeholder="Complement d'information" cols=41></textarea>
+    <h5 id="rAPPORT4-heading22" style="color:#575757;" class="underline padding noBottomMarge">
+      Problèmes avec les plans, devis et professionnels :
+    </h5>
+    <textarea style="width:100%;" class="textareaSmall padding" name="textarea3" id="textarea3" placeholder="Complement d'information" cols=41></textarea>
+    <h5 id="rAPPORT4-heading23" style="color:#575757;" class="underline padding noBottomMarge">
+      Travaux non prévus réalisés :
+    </h5>
+    <textarea style="width:100%;" class="textareaSmall padding" name="textarea4" id="textarea4" placeholder="Complement d'information" cols=41></textarea>
+    <h5 id="rAPPORT4-heading25" style="color:#575757;" class="underline padding noBottomMarge">
+      Instructions verbales et discussions :
+    </h5>
+    <textarea style="width:100%;" class="textareaSmall padding" name="textarea5" id="textarea5" placeholder="Complement d'information" cols=41></textarea>
+    <h5 id="rAPPORT4-heading24" style="color:#575757;" class="underline padding noBottomMarge">
+      Visiteurs :
+    </h5>
+    <ion-item id="rAPPORT4-checkbox1">
+      <ion-label>
+        Architecte
+      </ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item id="rAPPORT4-checkbox2">
+      <ion-label>
+        CNESST
+      </ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item id="rAPPORT4-checkbox3">
+      <ion-label>
+        CCQ
+      </ion-label>
+      <ion-checkbox (ionChange)="CCQtoggle()" ></ion-checkbox>
+    </ion-item>
+    <ion-item *ngIf="CCQSelect" id="rAPPORT4-input30">
+      <ion-label>
+        Si CCQ :
+      </ion-label>
+      <ion-input type="text" placeholder="&quot;Precisez&quot;"></ion-input>
+    </ion-item>
+    <h5 id="rAPPORT4-heading26" style="color:#575757;" class="underline padding noBottomMarge">
+      Autres remarques :
+    </h5>
+    <textarea class="textareaSmall padding" name="accNouveau" id="accNouveau" placeholder="Complement d'information" cols=41 style="width:100%;"></textarea>
+    <div class="spacer" style="height:38px;" id="rAPPORT4-spacer31"></div>
+  </form>
+</ion-content>

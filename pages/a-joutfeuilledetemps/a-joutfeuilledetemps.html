@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      AJOUT FEUILLE DE TEMPS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page21" style="background-color:#F1F1F1;">
+  <form id="aJOUTFEUILLEDETEMPS-form14">
+    <ion-item id="aJOUTFEUILLEDETEMPS2-select4" class="bottomborder">
+      <ion-label>
+        Projet :
+      </ion-label>
+      <ion-select name="projetin">
+        <ion-option *ngFor="let projet of mesProjet" (ionSelect)="setProjetId(projet.id)">
+          {{projet.nom}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <ion-searchbar showCancelButton="true" placeholder="Selectionnez employe(e)(s)"  (ionInput)="filterItems($event)"
+    (ionCancel)="reset()"></ion-searchbar>
+  <ion-scroll style="height: 150px">
+    <div *ngFor="let item of items" >
+    <ion-list style="padding-left: 2%; padding-right: 2%; padding-bottom: 1%;margin-bottom: 0;">
+      <ion-item (click)="setSelected(item.id)" [style.color]="getFontColor(item)">
+        {{item.prenom}}, {{ item.nom }}
+      </ion-item>
+    </ion-list>
+    </div>
+  </ion-scroll>
+  <form id="aJOUTFEUILLEDETEMPS-form15">
+    <ion-item id="aJOUTFEUILLEDETEMPS2-input33" class="topborder">
+      <ion-label>
+        Nombre de kilometres :
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="newDistance" placeholder="&quot;50 kms&quot;" name="kilometragein"></ion-input>
+    </ion-item>
+  </form>
+  <form id="aJOUTFEUILLEDETEMPS-form11">
+    <ion-item id="aJOUTFEUILLEDETEMPS-input34">
+      <ion-label>
+        Date :
+      </ion-label>
+      <ion-input type="date" [(ngModel)]="newDate" placeholder="" name="datein"></ion-input>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDETEMPS-input35">
+      <ion-label>
+        De :
+      </ion-label>
+      <ion-input type="time" [(ngModel)]="newHDebut" placeholder="" name="dein"></ion-input>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDETEMPS-input36" class="bottomborder">
+      <ion-label>
+        A :
+      </ion-label>
+      <ion-input type="time" [(ngModel)]="newHFin" placeholder="" name="ain"></ion-input>
+    </ion-item>
+  </form>
+  <form id="aJOUTFEUILLEDETEMPS-form12" class="noTopMarge">
+    <ion-item id="aJOUTFEUILLEDETEMPS-input37" class="noTopMarge">
+      <ion-label>
+        Pause Matin :
+      </ion-label>
+      <ion-input type="time" [(ngModel)]="newPauseMatin" placeholder="" name="pausematinin"></ion-input>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDETEMPS-input39" class="noTopMarge">
+      <ion-label>
+        Pause Midi :
+      </ion-label>
+      <ion-input type="time" [(ngModel)]="newPauseMidi" placeholder="" name="pausemidiin"></ion-input>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDETEMPS-input38" class="bottomborder">
+      <ion-label>
+        Pause Apres-Midi :
+      </ion-label>
+      <ion-input type="time" [(ngModel)]="newPauseApresmidi" placeholder="" name="pauseapremin"></ion-input>
+    </ion-item>
+  </form>
+  <button id="aJOUTFEUILLEDETEMPS-button29" ion-button color="positive" block small style="border-radius:1024px 1024px 1024px 1024px; padding-left: 3%; padding-right: 3%" on-click="createFeuilleDeTemps(newProjet, newDistance, newHDebut, newHFin, newDate, newPauseMatin, newPauseMidi, newPauseApresmidi, items)">
+    VALIDER
+  </button>
+</ion-content>

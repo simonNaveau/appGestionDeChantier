@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      AJOUT FEUILLE DEQUIPEMENT
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page23" style="background-color:#F1F1F1;">
+  <form id="aJOUTFEUILLEDEQUIPEMENT-form10">
+    <ion-item id="aJOUTFEUILLEDEQUIPEMENT-select2">
+      <ion-label>
+        Projet :
+      </ion-label>
+      <ion-select name="projetin">
+        <ion-option *ngFor="let projet of mesProjet" (ionSelect)="setProjetId(projet.id)">
+          {{projet.nom}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDEQUIPEMENT-select3">
+      <ion-label>
+        Equipement :
+      </ion-label>
+      <ion-select name="equipementin">
+        <ion-option *ngFor="let equi of equipements" (ionSelect)="setEquipementId(equi.id)">
+          {{equi.identification}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDEQUIPEMENT-input13">
+      <ion-label>
+        Date :
+      </ion-label>
+      <ion-input type="date" [(ngModel)]="newDate" placeholder="" name="datein"></ion-input>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDEQUIPEMENT-input18">
+      <ion-label>
+        De :
+      </ion-label>
+      <ion-input type="time" [(ngModel)]="newHDebut" placeholder="" name="dein"></ion-input>
+    </ion-item>
+    <ion-item id="aJOUTFEUILLEDEQUIPEMENT-input19" class="bottomborder">
+      <ion-label>
+        A :
+      </ion-label>
+      <ion-input type="time" [(ngModel)]="newHFin" placeholder="" name="ain"></ion-input>
+    </ion-item>
+    <div id="aJOUTFEUILLEDEQUIPEMENT-container13" class="bottomborder">
+      <div class="spacer" style="height:35px;" id="aJOUTFEUILLEDEQUIPEMENT-spacer21"></div>
+    </div>
+    <ion-item id="aJOUTFEUILLEDEQUIPEMENT-select4">
+      <ion-label>
+        Operateur :
+      </ion-label>
+      <ion-select name="equipementin">
+        <ion-option *ngFor="let emp of employes" (ionSelect)="setOperateur(emp)">
+          {{emp.nom}}, {{emp.prenom}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <button id="aJOUTFEUILLEDEQUIPEMENT-button12" ion-button color="positive" block small style="border-radius:1024px 1024px 1024px 1024px; padding-left: 3%; padding-right: 3%" on-click="createFeuilleDEquipement(newProjet, newEquipement, newDistance, newHDebut, newHFin, newOperateur, newDate, newNomOperateur)">
+    VALIDER
+  </button>
+</ion-content>

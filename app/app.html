@@ -1,0 +1,39 @@
+<ion-menu side="left" persistent="true" [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        MENU
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21" style="background-color:#F1F1F1;">
+    <ion-list id="menu-list1">
+      <ion-item color="none" menuClose="" on-click="goToMESENTREPRISES()" id="menu-list-item1">
+        <ion-icon name="home" item-left></ion-icon>
+        Mes Entreprises
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToPROFIL()" id="menu-list-item4">
+        <ion-icon name="contact" item-left></ion-icon>
+        Mon Profil
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToNOTIFICATION()" id="menu-list-item5">
+        <ion-icon name="notifications" item-left></ion-icon>
+        Notifications
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToMESENTREPRISES()" id="menu-list-item7">
+        <ion-icon name="pie" item-left></ion-icon>
+        Quotas : "XX%"
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToMESENTREPRISES()" id="menu-list-item6">
+        <ion-icon name="flag" item-left></ion-icon>
+        Langue
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToJOURNALDECHANTIER()" id="menu-list-item154">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Deconnexion
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

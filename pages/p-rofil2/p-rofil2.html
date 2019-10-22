@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      PROFIL
+    </ion-title>
+    <ion-buttons end (click)="putProfil(newnom, newprenom, newcourriel, newtitre, newcellulaire)">
+      <button ion-button icon-only solid>
+        <ion-icon name="checkmark-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page10" style="background-color:#F1F1F1;">
+  <img src="assets/img/kjCqzdfBRUyHT4964AQa_casque.png" style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" />
+  <ion-list id="pROFIL2-list24">
+    <form id="pROFIL2-form4">
+      <ion-item id="pROFIL2-input8">
+        <ion-label>
+          Prenom:
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="newprenom" placeholder="{{origin.prenom}}" name="inprenom"></ion-input>
+      </ion-item>
+      <ion-item id="pROFIL2-input9">
+        <ion-label>
+          Nom:
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="newnom" placeholder="{{origin.nom}}" name="innom"></ion-input>
+      </ion-item>
+      <div class="spacer" style="height:13px;" id="pROFIL2-spacer22"></div>
+      <h4 id="pROFIL2-heading7" style="color:#000000;font-style:italic;" class="underline padding">
+        Informations complementaires :
+      </h4>
+      <ion-item id="pROFIL2-input10">
+        <ion-label>
+          Titre:
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="newtitre" placeholder="{{origin.titre}}" name="intitre"></ion-input>
+      </ion-item>
+      <ion-item id="pROFIL2-input11">
+        <ion-label>
+          Cellulaire:
+        </ion-label>
+        <ion-input type="tel"[(ngModel)]="newcellulaire" placeholder="{{origin.cellulaire}}" name="ince"></ion-input>
+      </ion-item>
+      <ion-item id="pROFIL2-input12">
+        <ion-label>
+          Courriel:
+        </ion-label>
+        <ion-input type="email" [(ngModel)]="newcourriel" placeholder="{{origin.courriel}}" name="incourriel"></ion-input>
+      </ion-item>
+    </form>
+  </ion-list>
+</ion-content>
